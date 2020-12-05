@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "inc\calculator.h"
+#include "calculator.h"
 
 int main()
 {
