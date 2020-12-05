@@ -4,7 +4,7 @@
 int main()
 {
 int choice;
-printf("Enter your choice");
+printf("Enter your choice ");
 scanf("%d", &choice);
 
 switch(choice)
@@ -24,10 +24,10 @@ case 2:
 {
  int num1, num2;
   printf("Enter first number ");
-scanf("%d", &num1);
-printf("Enter second number ");
-scanf("%d", &num2);
-printf("Difference is: %d",substract(num1,num2));
+  scanf("%d", &num1);
+  printf("Enter second number ");
+  scanf("%d", &num2);
+  printf("Difference is: %d",substract(num1,num2));
 break;
 
 }
@@ -44,12 +44,30 @@ break;
 case 4:
 {
     int num1, num2;
-   printf("Enter first number ");
+   printf("Enter first number:");
    scanf("%d", &num1);
-   printf("Enter second number ");
+   printf("Enter second number:");
    scanf("%d", &num2);
    printf("Result is: %d",divide(num1,num2));
    break;
+}
+case 5:
+{
+    int num;
+    printf("Enter number ");
+   scanf("%d", &num);
+   printf("Square is: %d",square(num));
+
+}
+case 6:
+{
+{
+int num;
+printf("Enter number ");
+scanf("%d", &num);
+printf("Square root is: %d",sqarert(num));
+
+} 
 }
 }
 }
