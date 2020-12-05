@@ -31,5 +31,25 @@ printf("Difference is: %d",substract(num1,num2));
 break;
 
 }
+case 3:
+{
+int num1, num2;
+printf("Enter first number ");
+scanf("%d", &num1);
+printf("Enter second number ");
+scanf("%d", &num2);
+printf("Product is: %d",multiply(num1,num2));
+break;
+}
+case 4:
+{
+    int num1, num2;
+   printf("Enter first number ");
+   scanf("%d", &num1);
+   printf("Enter second number ");
+   scanf("%d", &num2);
+   printf("Result is: %d",divide(num1,num2));
+   break;
+}
 }
 }
