@@ -8,7 +8,7 @@
 
 /* Prototypes for all the test functions */
 void test_add(void);
-//void test_substract(void);
+void test_substract(void);
 void test_multiply(void);
 void test_divide(void);
 
@@ -24,7 +24,7 @@ int main() {
 
 
   CU_add_test(suite,"add",test_add);
-  //CU_add_test(suite,"substract",test_substract);
+  CU_add_test(suite,"substract",test_substract);
   CU_add_test(suite,"multiply",test_multiply);
   CU_add_test(suite,"divide",test_divide);
 
@@ -58,5 +58,10 @@ void test_divide(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(divide(6.7,2), 3.350, 0);
     CU_ASSERT_DOUBLE_EQUAL(divide(6.7,0), 0, 0);
+}
+void test_substract(void)
+{
+    CU_ASSERT_EQUAL(substract(6,2), 4);
+    CU_ASSERT_EQUAL(substract(1,2), -1);
 }
 
