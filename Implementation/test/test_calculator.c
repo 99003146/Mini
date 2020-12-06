@@ -130,6 +130,6 @@ void test_gtokg(void)
 
 void test_sine(void)
 {
-    CU_ASSERT_DOUBLE_EQUAL(sin(90) , 1.000000, 0.1);
-    CU_ASSERT_DOUBLE_EQUAL(sin(0) , 0, 0);  
+    CU_ASSERT_DOUBLE_EQUAL(sine(90) , 1.000000, 0.1);
+    CU_ASSERT_DOUBLE_EQUAL(sine(0) , 0, 0);  
 }
