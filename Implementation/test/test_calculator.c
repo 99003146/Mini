@@ -41,6 +41,5 @@ int main() {
 
 void test_multiply(void)
 {
-    ASSERT_DOUBLE_EQUAL(8.420, multiply(4.21,2));
-
+    CU_ASSERT_DOUBLE_EQUAL(8.420, multiply(4.21,2));
 }
