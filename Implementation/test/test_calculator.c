@@ -21,7 +21,7 @@ int main() {
 /* Note: Do not edit END */
 
 
- 
+ CU_add_test(suite,"add",test_add);
   CU_add_test(suite,"multiply",test_multiply);
   CU_add_test(suite,"divide",test_divide);
 
@@ -40,7 +40,10 @@ int main() {
 }
 
 /* Write all the test functions */
-
+void test_add(void)
+{
+    CU_ASSERT_EQUAL(add(1,2), 3);
+}
 
 void test_multiply(void)
 {
