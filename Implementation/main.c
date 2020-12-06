@@ -117,8 +117,16 @@ switch(choice)
                 {
                     double num;
                     printf("Enter distance in Kilometer ");
-                    scanf("%lf", &num);  
+                    scanf("%lf", &num);
+                    if(num>=0)
+                    {  
                     printf("Distance in meter is: %.3lf", kmtom(num));
+                    }
+                    else
+                    {
+                        printf("Enter a postive value");
+                    }
+                    
                     break;
                 }
                 case 4:

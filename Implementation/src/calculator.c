@@ -54,10 +54,17 @@ double ftoc(double fahrenheit)
 }
 
 double kmtom(double km)
-{
+{   if(km>=0)
+    {
     double meter;
     meter=km*1000;
     return meter;
+    }
+    else
+    {
+        return 0;
+    }
+    
 }
 
 double mtokm(double meter)

@@ -15,6 +15,7 @@ void test_square(void);
 void test_squarert(void);
 void test_ctof(void);
 void test_ftoc(void);
+void test_kmtom(void);
 
 /* Start of the aSpplication test */
 int main() {
@@ -33,7 +34,8 @@ int main() {
   CU_add_test(suite,"square",test_square);
   CU_add_test(suite,"square root",test_squarert);
   CU_add_test(suite,"Celsius_to_Farenheit", test_ctof);
- CU_add_test(suite,"Farenheit_to_Celsius", test_ftoc);
+  CU_add_test(suite,"Farenheit_to_Celsius", test_ftoc);
+  CU_add_test(suite,"Kilometer_to_meter", test_kmtom);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -95,4 +97,11 @@ void test_squarert(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(ftoc(89.6) , 32.000, 0);
     CU_ASSERT_DOUBLE_EQUAL(ftoc(-25.6) , -32.000, 0);
+}
+
+void test_kmtom(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(kmtom(4) , 4000, 0);
+    CU_ASSERT_DOUBLE_EQUAL(kmtom(-2) , 0, 0);
+
 }
