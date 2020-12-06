@@ -4,7 +4,7 @@
 int add(int, int);
 int substract(int, int);
 double multiply(double, double);
-float divide(float, float);
+double divide(double, double);
 int square(int);
 int sqarert(int);
 
