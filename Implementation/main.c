@@ -63,20 +63,20 @@ switch(choice)
         }
         case 5:
         {
-             int num;
+            double num;
             printf("Enter number ");
-            scanf("%d", &num);
-            printf("Square is: %d",square(num));
+            scanf("%lf", &num);
+            printf("Square is: %.3lf",square(num));
              break;
 
         }
         case 6:
         {
 
-            int num;
+            double num;
             printf("Enter number ");
-            scanf("%d", &num);
-            printf("Square root is: %d",sqarert(num));
+            scanf("%lf", &num);
+            printf("Square root is: %.3lf",sqarert(num));
             break;
         }
         } 
@@ -90,53 +90,53 @@ switch(choice)
         {
             case 1:
                 {
-                    int num;
+                    double num;
                     printf("Enter temprature in celsuis ");
-                    scanf("%d", &num);
-                    printf("Temprature in Fahrenheit is: %d", ctof(num));
+                    scanf("%lf", &num);
+                    printf("Temprature in Fahrenheit is: %.3lf", ctof(num));
                     break;
 
                 }
             case 2:
                 {
-                        int num;
+                        double num;
                         printf("Enter temprature in Fahrenheit ");
-                        scanf("%d", &num);
-                        printf("Temprature in Degree is: %d", ftoc(num));
+                        scanf("%lf", &num);
+                        printf("Temprature in Degree is: %.3lf", ftoc(num));
                         break;
                 }
             case 3:
                 {
-                    int num;
+                    double num;
                     printf("Enter distance in Kilometer ");
-                    scanf("%d", &num);  
-                    printf("Distance in meter is: %d", kmtom(num));
+                    scanf("%lf", &num);  
+                    printf("Distance in meter is: %.3lf", kmtom(num));
                     break;
                 }
                 case 4:
                 {
-                    int num;
+                    double num;
                     printf("Enter distance in Meter ");
-                    scanf("%d", &num);  
-                    printf("Distance in kilometer is: %d", mtokm(num));
+                    scanf("%lf", &num);  
+                    printf("Distance in kilometer is: %.3lf", mtokm(num));
                     break;
                 
                 }
                 case 5:
                 {
-                    int num;
+                    double num;
                     printf("Enter weight in kg: ");
-                    scanf("%d", &num);  
-                    printf("Weight in gram is: %d", kgtog(num));
+                    scanf("%lf", &num);  
+                    printf("Weight in gram is: %.3lf", kgtog(num));
                     break;
                 
                 }
                 case 6:
                 {
-                    int num;
+                    double num;
                     printf("Enter weight in gram: ");
-                    scanf("%d", &num);  
-                    printf("Weight in kilogram is: %d", gtokg(num));
+                    scanf("%lf", &num);  
+                    printf("Weight in kilogram is: %.3lf", gtokg(num));
                     break;
                 }
         }

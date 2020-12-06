@@ -19,11 +19,11 @@ double divide(double number1, double number2)
 {
     return number1/number2;
 }
-int square(int number)
+double square(double number)
 {
     return number*number;
 }
-int sqarert(int number)
+double sqarert(double number)
 {
     return sqrt(number);
 }
@@ -31,43 +31,43 @@ int sqarert(int number)
 
 //conversion
 
-int ctof(int celsius)
+double ctof(double celsius)
 {
-    int fahrenheit;
+    double fahrenheit;
     fahrenheit = (celsius * 9 / 5) + 32;
     return fahrenheit;
 }
 
-int ftoc(int fahrenheit)
+double ftoc(double fahrenheit)
 {
-    int celsius;
+    double celsius;
     celsius = ((fahrenheit-32)*5)/9;
     return celsius;
 }
 
-int kmtom(int km)
+double kmtom(double km)
 {
-    int meter;
+    double meter;
     meter=km*1000;
     return meter;
 }
 
-int mtokm(int meter)
+double mtokm(double meter)
 {
     int km;
     km=meter/1000;
     return km;
 }
 
-int kgtog(int kg)
+double kgtog(double kg)
 {
-    int gram=kg*1000;
+    double gram=kg*1000;
     return gram;
 }
 
-int gtokg(int gram)
+double gtokg(double gram)
 {
-    int kg=gram/1000;
+    double kg=gram/1000;
     return kg;
 }
 

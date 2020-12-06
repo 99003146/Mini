@@ -5,15 +5,15 @@ int add(int, int);
 int substract(int, int);
 double multiply(double, double);
 double divide(double, double);
-int square(int);
-int sqarert(int);
+double square(double);
+double sqarert(double);
 
-int ctof(int);
-int ftoc(int);
-int kmtom(int);
-int mtokm(int);
-int kgtog(int);
-int gtokg(int);
+double ctof(double);
+double ftoc(double);
+double kmtom(double);
+double mtokm(double);
+double kgtog(double);
+double gtokg(double);
 
 double cosine(double);
 double sine(double);
