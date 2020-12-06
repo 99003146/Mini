@@ -109,7 +109,7 @@ void test_kmtom(void)
 }
 void test_mtokm(void)
 {
-    CU_ASSERT_DOUBLE_EQUAL(kmtom(4000) , 4, 0);
-    CU_ASSERT_DOUBLE_EQUAL(kmtom(-2) , 0, 0);
+    CU_ASSERT_DOUBLE_EQUAL(mtokm(4000) , 4, 0);
+    CU_ASSERT_DOUBLE_EQUAL(mtokm(-2) , 0, 0);
 }
 
