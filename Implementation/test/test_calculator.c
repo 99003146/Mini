@@ -38,13 +38,9 @@ int main() {
 
 /* Write all the test functions */
 
-void test_admin(void)
-{   CU_ASSERT(0==admin_login("admin","admin123"));
-    CU_ASSERT(1==admin_login("admin","admin24"));
 
-}
 void test_multiply(void)
 {
-    CU_ASSERT_DOUBLE_EQUAL_FATAL(8.420, multiply(4.21,2));
+    ASSERT_DOUBLE_EQUAL(8.420, multiply(4.21,2));
 
 }
