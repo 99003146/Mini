@@ -8,7 +8,7 @@
 
 /* Prototypes for all the test functions */
 void test_add(void);
-void test_substract(void);
+//void test_substract(void);
 void test_multiply(void);
 void test_divide(void);
 
