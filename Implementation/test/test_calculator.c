@@ -13,6 +13,8 @@ void test_multiply(void);
 void test_divide(void);
 void test_square(void);
 void test_squarert(void);
+void test_ctof(void);
+void test_ftoc(void);
 
 /* Start of the aSpplication test */
 int main() {
@@ -30,6 +32,8 @@ int main() {
   CU_add_test(suite,"divide",test_divide);
   CU_add_test(suite,"square",test_square);
   CU_add_test(suite,"square root",test_squarert);
+  CU_add_suite(suite,"Celsius to Farenheit", test_ctof);
+   CU_add_suite(suite,"Farenheit to Celsius", test_ftoc);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -79,4 +83,16 @@ void test_squarert(void)
     CU_ASSERT_DOUBLE_EQUAL(sqarert(144) , 12, 0);
     CU_ASSERT_DOUBLE_EQUAL(sqarert(98) , 9.899, 0.1);
 
+}
+
+void test_ctof(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(ctof(32) , 89.600, 0);
+    CU_ASSERT_DOUBLE_EQUAL(ctof(-32) , -25.600, 0);
+}
+
+void test_ftoc(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(ftoc(89.6) , 32.000, 0);
+    CU_ASSERT_DOUBLE_EQUAL(ftoc(-25.6) , -32.000, 0);
 }
