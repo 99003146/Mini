@@ -7,6 +7,7 @@
 #define PROJECT_NAME    "Calculator"
 
 /* Prototypes for all the test functions */
+void test_add(void);
 void test_multiply(void);
 void test_divide(void);
 
@@ -21,7 +22,7 @@ int main() {
 /* Note: Do not edit END */
 
 
- CU_add_test(suite,"add",test_add);
+  CU_add_test(suite,"add",test_add);
   CU_add_test(suite,"multiply",test_multiply);
   CU_add_test(suite,"divide",test_divide);
 
