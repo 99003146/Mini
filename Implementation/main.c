@@ -151,7 +151,15 @@ switch(choice)
                     double num;
                     printf("Enter weight in kg: ");
                     scanf("%lf", &num);  
+                    if(num>=0)
+                    {
                     printf("Weight in gram is: %.3lf", kgtog(num));
+                    }
+                    else
+                    {
+                        printf("Enter a positive value");
+                    }
+                    
                     break;
                 
                 }
@@ -160,7 +168,15 @@ switch(choice)
                     double num;
                     printf("Enter weight in gram: ");
                     scanf("%lf", &num);  
+                    if(num>=0)
+                    {
                     printf("Weight in kilogram is: %.3lf", gtokg(num));
+                    }
+                    else
+                    {
+                        printf("Enter a positive value");
+                    }
+                    
                     break;
                 }
         }
