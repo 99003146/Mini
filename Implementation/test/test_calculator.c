@@ -19,7 +19,7 @@ void test_kmtom(void);
 void test_mtokm(void);
 void test_kgtog(void);
 void test_gtokg(void);
-void test_sin(void);
+void test_sine(void);
 /* Start of the aSpplication test */
 int main() {
 /* Note: Do not edit START*/
@@ -41,7 +41,7 @@ int main() {
   CU_add_test(suite,"Kilometer_to_meter", test_kmtom);
   CU_add_test(suite,"meter_to_kilometer", test_mtokm);
   CU_add_test(suite,"kilogram_to_gram", test_kgtog);
-  CU_add_test(suite,"sine",test_sin);
+  CU_add_test(suite,"sine",test_sine);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -128,7 +128,7 @@ void test_gtokg(void)
 }
 
 
-void test_sin(void)
+void test_sine(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(sin(90) , 1.000000, 0.1);
     CU_ASSERT_DOUBLE_EQUAL(sin(0) , 0, 0);  
