@@ -52,7 +52,7 @@ void test_add(void)
 void test_multiply(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(multiply(4.21,2), 8.420, 0);
-    CU_ASSERT_DOUBLE_EQUAL(multiply(-3.2*2),-6.400,0);
+    CU_ASSERT_DOUBLE_EQUAL(multiply(-3.2,2),-6.400,0);
 }
 void test_divide(void)
 {
