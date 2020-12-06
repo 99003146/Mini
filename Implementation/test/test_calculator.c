@@ -141,7 +141,7 @@ void test_sine(void)
 void test_cosine(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(cosine(0) , 1, 0.1);
-    CU_ASSERT_DOUBLE_EQUAL(cosine(45) , 0.707107, 0);  
+    CU_ASSERT_DOUBLE_EQUAL(cosine(45) , 0.707107, 0.1);  
 }
 
 void test_tan(void)
