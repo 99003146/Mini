@@ -12,9 +12,9 @@ void test_substract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_square(void);
+void test_squarert(void);
 
-
-/* Start of the application test */
+/* Start of the aSpplication test */
 int main() {
 /* Note: Do not edit START*/
   /*Initialize and setup the Test Framework */
@@ -29,6 +29,7 @@ int main() {
   CU_add_test(suite,"multiply",test_multiply);
   CU_add_test(suite,"divide",test_divide);
   CU_add_test(suite,"square",test_square);
+  CU_add_test(suite,"square root",test_squarert);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -73,5 +74,9 @@ void test_square(void)
     CU_ASSERT_DOUBLE_EQUAL(square(-6.7), 44.89, 0);
 }
 
+void test_squarrt(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(sqarert(144) , 12, 0);
+    CU_ASSERT_DOUBLE_EQUAL(sqarert(98) , 9.899, 0);
 
-
+}
