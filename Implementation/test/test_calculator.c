@@ -44,6 +44,7 @@ int main() {
 void test_add(void)
 {
     CU_ASSERT_EQUAL(add(1,2), 3);
+    CU_ASSERT_EQUAL(add(0,-3), -3);
 }
 
 void test_multiply(void)
