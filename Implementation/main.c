@@ -58,7 +58,15 @@ switch(choice)
             scanf("%lf", &num1);
             printf("Enter second number:");
             scanf("%lf", &num2);
+            if(num2>0)
+            {
             printf("Result is: %.3lf",divide(num1,num2));
+            }
+            else
+            {
+                printf("Cannot Divide by zero");
+            }
+            
             break;
         }
         case 5:

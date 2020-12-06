@@ -23,8 +23,7 @@ double divide(double number1, double number2)
     }
     else
     {
-        printf("Cannot Divide by zero");
-        exit(0);
+        return 0;
     }
     
 }
