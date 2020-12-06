@@ -7,10 +7,19 @@ int multiply(int, int);
 float divide(float, float);
 int square(int);
 int sqarert(int);
+
 int ctof(int);
 int ftoc(int);
 int kmtom(int);
 int mtokm(int);
 int kgtog(int);
 int gtokg(int);
+
+double cosine(double);
+double sine(double);
+double Tan(double);
+double Cot(double);
+double Sec(double);
+double Cosec(double m);
+
 #endif
