@@ -13,7 +13,7 @@ void test_multiply(void);
 void test_divide(void);
 void test_square(void);
 void test_squarert(void);
-//void test_ctof(void);
+void test_ctof(void);
 //void test_ftoc(void);
 
 /* Start of the aSpplication test */
