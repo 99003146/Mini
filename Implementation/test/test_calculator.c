@@ -74,7 +74,7 @@ void test_square(void)
     CU_ASSERT_DOUBLE_EQUAL(square(-6.7), 44.89, 0);
 }
 
-void test_squarrt(void)
+void test_squarert(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(sqarert(144) , 12, 0);
     CU_ASSERT_DOUBLE_EQUAL(sqarert(98) , 9.899, 0);
