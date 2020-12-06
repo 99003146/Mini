@@ -20,6 +20,7 @@ void test_mtokm(void);
 void test_kgtog(void);
 void test_gtokg(void);
 void test_sine(void);
+void test_cosine(void);
 /* Start of the aSpplication test */
 int main() {
 /* Note: Do not edit START*/
@@ -42,6 +43,7 @@ int main() {
   CU_add_test(suite,"meter_to_kilometer", test_mtokm);
   CU_add_test(suite,"kilogram_to_gram", test_kgtog);
   CU_add_test(suite,"sine",test_sine);
+  CU_add_test(suite,"cos",test_cosine);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -130,6 +132,12 @@ void test_gtokg(void)
 
 void test_sine(void)
 {
-    CU_ASSERT_DOUBLE_EQUAL(sine(90) , 1.000000, 0.1);
+    CU_ASSERT_DOUBLE_EQUAL(sine(90) , 1, 0.1);
     CU_ASSERT_DOUBLE_EQUAL(sine(0) , 0, 0);  
+}
+
+void test_cosine(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(cosine(0) , 1, 0.1);
+    CU_ASSERT_DOUBLE_EQUAL(cosine(0) , 0, 0);  
 }
