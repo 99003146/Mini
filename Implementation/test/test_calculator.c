@@ -54,5 +54,5 @@ void test_multiply(void)
 void test_divide(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(divide(6.7,2), 3.350, 0);
-    //CU_ASSERT_DOUBLE_EQUAL(divide(6.7,0), 0, 0);
+    CU_ASSERT_DOUBLE_EQUAL(divide(6.7,0), 0, 0);
 }
