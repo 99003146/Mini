@@ -32,7 +32,7 @@ int main() {
   CU_add_test(suite,"divide",test_divide);
   CU_add_test(suite,"square",test_square);
   CU_add_test(suite,"square root",test_squarert);
-  //CU_add_suite(suite,"Celsius_to_Farenheit", test_ctof);
+  CU_add_suite(suite,"Celsius_to_Farenheit", test_ctof);
  // CU_add_suite(suite,"Farenheit_to_Celsius", test_ftoc);
 
 /* Note: Do not edit START*/
@@ -85,11 +85,11 @@ void test_squarert(void)
 
 }
 
-// void test_ctof(void)
-// {
-//     CU_ASSERT_DOUBLE_EQUAL(ctof(32) , 89.600, 0);
-//     CU_ASSERT_DOUBLE_EQUAL(ctof(-32) , -25.600, 0);
-// }
+ void test_ctof(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(ctof(32) , 89.600, 0);
+   CU_ASSERT_DOUBLE_EQUAL(ctof(-32) , -25.600, 0);
+ }
 
 // void test_ftoc(void)
 // {
