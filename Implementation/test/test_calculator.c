@@ -8,6 +8,7 @@
 
 /* Prototypes for all the test functions */
 void test_multiply(void);
+void test_divide(void);
 
 
 /* Start of the application test */
@@ -22,6 +23,7 @@ int main() {
 
  
   CU_add_test(suite,"multiply",test_multiply);
+  CU_add_test(suite,"divide",test_divide);
 
 
 /* Note: Do not edit START*/
@@ -43,4 +45,8 @@ int main() {
 void test_multiply(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(multiply(4.21,2), 8.420, 0);
+}
+void test_divide(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(divide(6.7,2), 3.350, 0);
 }

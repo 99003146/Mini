@@ -15,7 +15,7 @@ double multiply(double number1, double number2)
 {
     return number1*number2;
 }
-float divide(float number1, float number2)
+double divide(double number1, double number2)
 {
     return number1/number2;
 }
@@ -74,39 +74,39 @@ int gtokg(int gram)
 //trignometric
 
 
-// double cosine(double m){
-//     m=m/57.295779513;
-//     printf("cosine of angle is ");
-//     double result=cos(m);
-//     return result;
-// }
-// double sine(double m){
-//     m=m/57.295779513;
-//     printf("sine of angle is ");
-//     double result=sin(m);
-//     return result;
-// }
-// double Tan(double m){
-//     m=m/57.295779513;
-//     printf("tan of angle is ");
-//     double result=tan(m);
-//     return result;
-// }
-// double Cot(double m){
-//     m=m/57.295779513;
-//     printf("Cot of angle is ");
-//     double result=1/tan(m);
-//     return result;
-// }
-// double Sec(double m){
-//     m=m/57.295779513;
-//     printf("Sec of angle is ");
-//     double result=1/cos(m);
-//     return result;
-// }
-// double Cosec(double m){
-//     m=m/57.295779513;
-//     printf("Cosec of angle is ");
-//     double result=1/sin(m);
-//     return result;
-// }
+double cosine(double m){
+    m=m/57.295779513;
+    printf("cosine of angle is ");
+    double result=cos(m);
+    return result;
+}
+double sine(double m){
+    m=m/57.295779513;
+    printf("sine of angle is ");
+    double result=sin(m);
+    return result;
+}
+double Tan(double m){
+    m=m/57.295779513;
+    printf("tan of angle is ");
+    double result=tan(m);
+    return result;
+}
+double Cot(double m){
+    m=m/57.295779513;
+    printf("Cot of angle is ");
+    double result=1/tan(m);
+    return result;
+}
+double Sec(double m){
+    m=m/57.295779513;
+    printf("Sec of angle is ");
+    double result=1/cos(m);
+    return result;
+}
+double Cosec(double m){
+    m=m/57.295779513;
+    printf("Cosec of angle is ");
+    double result=1/sin(m);
+    return result;
+}

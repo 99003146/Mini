@@ -15,11 +15,11 @@ int mtokm(int);
 int kgtog(int);
 int gtokg(int);
 
-// double cosine(double);
-// double sine(double);
-// double Tan(double);
-// double Cot(double);
-// double Sec(double);
-// double Cosec(double m);
+double cosine(double);
+double sine(double);
+double Tan(double);
+double Cot(double);
+double Sec(double);
+double Cosec(double m);
 
 #endif

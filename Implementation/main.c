@@ -53,12 +53,12 @@ switch(choice)
         }
         case 4:
         {
-              float num1, num2;
+            double num1, num2;
             printf("Enter first number:");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter second number:");
-            scanf("%f", &num2);
-            printf("Result is: %.2f",divide(num1,num2));
+            scanf("%lf", &num2);
+            printf("Result is: %.3lf",divide(num1,num2));
             break;
         }
         case 5:
@@ -142,7 +142,7 @@ switch(choice)
         }
     break;
     }
-   /* case 3:
+    case 3:
     {
         printf("What do you want to do?\n1-Sin\n2-Cosine\n3-Tan\n4-Cot\n5-Sec\n6-Cosec\n");
         scanf("%d", &choice4);
@@ -184,7 +184,7 @@ switch(choice)
                 break;
             }
         }
-    }*/
+    }
 break;
 }
 
