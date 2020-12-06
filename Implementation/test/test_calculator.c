@@ -22,6 +22,7 @@ void test_gtokg(void);
 void test_sine(void);
 void test_cosine(void);
 void test_tan(void);
+void test_Cot(void);
 /* Start of the aSpplication test */
 int main() {
 /* Note: Do not edit START*/
@@ -46,6 +47,7 @@ int main() {
   CU_add_test(suite,"sine",test_sine);
   CU_add_test(suite,"cos",test_cosine);
   CU_add_test(suite,"tan",test_tan);
+  CU_add_test(suite,"Cot",test_Cot);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -148,4 +150,9 @@ void test_tan(void)
 {
     CU_ASSERT_DOUBLE_EQUAL(Tan(45) , 1, 0.1);
     CU_ASSERT_DOUBLE_EQUAL(Tan(0) , 0, 0);   
+}
+void test_Cot(void)
+{
+    CU_ASSERT_DOUBLE_EQUAL(Cot(45) , 1, 0.1);
+    CU_ASSERT_DOUBLE_EQUAL(Cot(90) , 0, 0);   
 }
