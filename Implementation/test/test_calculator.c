@@ -1,5 +1,6 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
+#include <math.h>
 
 /* Modify these two lines according to the project */
 #include <calculator.h>
@@ -41,5 +42,5 @@ int main() {
 
 void test_multiply(void)
 {
-    CU_ASSERT_DOUBLE_EQUAL(8.420, multiply(4.21,2));
+    CU_ASSERT_DOUBLE_EQUAL(multiply(4.21,2), 8.420, 0);
 }
