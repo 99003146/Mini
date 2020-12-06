@@ -3,7 +3,7 @@
 
 int add(int, int);
 int substract(int, int);
-int multiply(int, int);
+double multiply(double, double);
 float divide(float, float);
 int square(int);
 int sqarert(int);

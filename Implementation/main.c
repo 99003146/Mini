@@ -43,12 +43,12 @@ switch(choice)
         }
         case 3:
         {
-            int num1, num2;
+            double num1, num2;
             printf("Enter first number ");
-            scanf("%d", &num1);
+            scanf("%lf", &num1);
             printf("Enter second number ");
-            scanf("%d", &num2);
-            printf("Product is: %d",multiply(num1,num2));
+            scanf("%lf", &num2);
+            printf("Product is: %.3lf",multiply(num1,num2));
             break;
         }
         case 4:
