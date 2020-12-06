@@ -133,8 +133,16 @@ switch(choice)
                 {
                     double num;
                     printf("Enter distance in Meter ");
-                    scanf("%lf", &num);  
-                    printf("Distance in kilometer is: %.3lf", mtokm(num));
+                    scanf("%lf", &num);
+                    if(num>=0)
+                    {  
+                    printf("Distance in kilometer is: %.3lf", mtokm(num))
+                    }
+                    else
+                    {
+                        printf("Enter a positive value");
+                    }
+                    
                     break;
                 
                 }

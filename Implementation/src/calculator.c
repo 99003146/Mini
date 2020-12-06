@@ -70,8 +70,16 @@ double kmtom(double km)
 double mtokm(double meter)
 {
     int km;
+    if(km>=0)
+    {
     km=meter/1000;
     return km;
+    }
+    else
+    {
+        return 0;
+    }
+    
 }
 
 double kgtog(double kg)
